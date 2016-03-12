@@ -14,4 +14,5 @@ config/database.yml
 !/log/.keep
 /tmp
 
+/config/database.yml
 /vendor/ruby

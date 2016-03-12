@@ -5,9 +5,14 @@
   <h2><%= @video.name.present? ? @video.name : "Video" %></h2>
 </div>
 
+<div class="row controls">
+  <a id="play-master-video" class="btn btn-primary">Play</a>
+  <a id="pause-master-video" class="btn btn-primary">Pause</a>
+  <a id="start-clip-master-video" class="btn btn-danger">Start Clip</a>
+</div>
 <div class="row">
   <video id="master_video" class="video-js vjs-default-skin"
-    controls preload="auto" width="600"
+    preload="auto" width="600"
     poster="/assets/2016_Flight_Elite_Header.png"
     data-setup='{"example_option":true}'>
     <source src=<%= @video.dropbox_url %> type="video/mp4">
