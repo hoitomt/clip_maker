@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: clip_maker_development
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: clip_maker_test
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost

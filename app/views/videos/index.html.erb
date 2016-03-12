@@ -1,0 +1,22 @@
+<div class="row">
+  <h1>Videos</h1>
+</div>
+<div class="row">
+  <div class="pull-right">
+    <%= link_to "New Video", new_video_path %>
+  </div>
+  <div class="clear"></div>
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+    </tr>
+    <% @videos.each do |video| %>
+      <tr class="clickable-row" data-href=<%= url_for(video_path(video)) %> >
+        <td><%= video.name %></td>
+        <td><%= video.url %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
